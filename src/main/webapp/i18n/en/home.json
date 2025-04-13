@@ -1,17 +1,15 @@
 {
   "home": {
-    "title": "Welcome, Java Hipster!",
-    "subtitle": "This is your homepage",
+    "title": "🎯 Metas ENEM",
+    "subtitle": "Bem-vindo à plataforma de metas dos alunos",
     "logged": {
-      "message": "You are logged in as user \"{{username}}\"."
+      "message": "Você está logado como \"{{username}}\"."
     },
-    "question": "If you have any question on JHipster:",
+    "question": "Se precisar de suporte, acesse:",
     "link": {
-      "homepage": "JHipster homepage",
-      "stackoverflow": "JHipster on Stack Overflow",
-      "bugtracker": "JHipster bug tracker",
-      "chat": "JHipster public chat room",
-      "follow": "follow @jhipster on Twitter"
+      "homepage": "Gama Ensino",
+      "stackoverflow": "Gama Pré-Vestibular",
+      "bugtracker": "Repositório MetasEnem"
     },
     "like": "If you like JHipster, don't forget to give us a star on",
     "github": "GitHub"

@@ -1,12 +1,8 @@
-<div class="row">
-  <div class="col-md-3">
-    <span class="hipster img-fluid rounded"></span>
-  </div>
-
+<div class="container d-flex justify-content-center" style="margin-left: 5%; max-width: 95%">
   <div class="col-md-9">
-    <h1 class="display-4"><span jhiTranslate="home.title">🎯 Metas ENEM</span></h1>
+    <h1 class="display-4">🎯 Metas ENEM</h1>
 
-    <p class="lead" jhiTranslate="home.subtitle">Bem-vindo à plataforma de metas dos alunos</p>
+    <p class="lead">Bem-vindo à plataforma de metas dos alunos</p>
 
     <div>
       @if (account() !== null) {
@@ -34,33 +30,51 @@
       }
     </div>
 
-    <div class="caard mt-4 p-3 shadow-sm">
-      <h5>Total de alunos cadastrados:</h5>
-      <h3 class="text-primary">{{ totalAlunos }}</h3>
+    <div class="card mt-4 p-4 shadow-sm">
+      <div class="row">
+        <div class="col-md-4 d-flex align-items-center justify-content-center border-end">
+          <div>
+            <h4 class="text-center">Total de alunos cadastrados:</h4>
+            <h2 class="text-primary text-center">{{ totalAlunos }}</h2>
+          </div>
+        </div>
+
+        <div class="col-md-8">
+          <h5 class="text-center">Média das Notas</h5>
+          <table class="table table-bordered text-center mb-0">
+            <thead class="table-light">
+              <tr>
+                <th>Linguagens</th>
+                <th>Humanas</th>
+                <th>Natureza</th>
+                <th>Matemática</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr *ngIf="mediaNotas">
+                <td>{{ mediaNotas.linguagens | number: '1.0-0' }}</td>
+                <td>{{ mediaNotas.humanas | number: '1.0-0' }}</td>
+                <td>{{ mediaNotas.natureza | number: '1.0-0' }}</td>
+                <td>{{ mediaNotas.matematica | number: '1.0-0' }}</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
     </div>
 
-    <p jhiTranslate="home.question">Se precisar de suporte, acesse:</p>
+    <p>Se precisar de suporte, acesse:</p>
 
     <ul>
       <li>
-        <a href="https://gamaensino.com" target="_blank" rel="noopener noreferrer" jhiTranslate="home.link.homepage">Gama Ensino</a>
+        <a href="https://gamaensino.com" target="_blank" rel="noopener noreferrer">Gama Ensino</a>
       </li>
       <li>
-        <a href="https://gamaprevest.com/" target="_blank" rel="noopener noreferrer" jhiTranslate="home.link.stackoverflow"
-          >Gama Pré-Vestibular</a
-        >
+        <a href="https://gamaprevest.com/" target="_blank" rel="noopener noreferrer">Gama Pré-Vestibular</a>
       </li>
       <li>
-        <a
-          href="https://github.com/LuizHelio-Fim/Case-Estagio"
-          target="_blank"
-          rel="noopener noreferrer"
-          jhiTranslate="home.link.bugtracker"
-          >Repositório MetasEnem</a
-        >
+        <a href="https://github.com/LuizHelio-Fim/Case-Estagio" target="_blank" rel="noopener noreferrer">Repositório MetasEnem</a>
       </li>
     </ul>
   </div>
 </div>
-
-<footer class="text-center mt-5 py-3 border-top text-muted">Case - Estágio</footer>
