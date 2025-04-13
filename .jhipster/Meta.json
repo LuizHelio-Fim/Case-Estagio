@@ -1,0 +1,46 @@
+{
+  "annotations": {
+    "changelogDate": "20250413134454"
+  },
+  "applications": ["metasEnem"],
+  "dto": "mapstruct",
+  "fields": [
+    {
+      "fieldName": "linguagem",
+      "fieldType": "Integer",
+      "fieldValidateRules": ["required", "max"],
+      "fieldValidateRulesMax": "1000"
+    },
+    {
+      "fieldName": "humanas",
+      "fieldType": "Integer",
+      "fieldValidateRules": ["required", "max"],
+      "fieldValidateRulesMax": "1000"
+    },
+    {
+      "fieldName": "natureza",
+      "fieldType": "Integer",
+      "fieldValidateRules": ["required", "max"],
+      "fieldValidateRulesMax": "1000"
+    },
+    {
+      "fieldName": "matematica",
+      "fieldType": "Integer",
+      "fieldValidateRules": ["required", "max"],
+      "fieldValidateRulesMax": "1000"
+    }
+  ],
+  "name": "Meta",
+  "pagination": "pagination",
+  "relationships": [
+    {
+      "otherEntityField": "nome",
+      "otherEntityName": "aluno",
+      "relationshipName": "aluno",
+      "relationshipSide": "left",
+      "relationshipType": "one-to-one"
+    }
+  ],
+  "searchEngine": "no",
+  "service": "serviceClass"
+}

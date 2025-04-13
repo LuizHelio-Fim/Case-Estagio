@@ -1,0 +1,18 @@
+{
+  "generator-jhipster": {
+    "applicationType": "monolith",
+    "authenticationType": "jwt",
+    "baseName": "metasEnem",
+    "buildTool": "maven",
+    "clientFramework": "angular",
+    "devDatabaseType": "postgresql",
+    "entities": ["Aluno", "Meta"],
+    "jhipsterVersion": "8.10.0",
+    "jwtSecretKey": "YjY1ODMzN2VhNWIxYTEzNjY4OWE5NjFlNDU4NTAwOWJmMTJlYTQ3ZWE3MjY1M2ZlNTU5YWFiYjk5MmU3NzdiYWQ3YTkxY2Y1ZGY4YmE0NDBlN2ZlMTQxNjE1OTlkNDE0ZGIzMTJhY2U3ZjkwMzM4NjljZTcxNjg2Nzc2MzEzNzc=",
+    "languages": ["en"],
+    "lastLiquibaseTimestamp": 1744551894000,
+    "nativeLanguage": "en",
+    "packageName": "com.metas.enem",
+    "prodDatabaseType": "postgresql"
+  }
+}

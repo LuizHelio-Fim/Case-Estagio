@@ -1,0 +1,32 @@
+entity Aluno {
+  nome String required
+}
+
+entity Meta {
+  linguagem Integer required max(1000)
+  humanas Integer required max(1000)
+  natureza Integer required max(1000)
+  matematica Integer required max(1000)
+}
+
+relationship OneToOne {
+	Meta{aluno(nome)} to Aluno
+}
+
+paginate Aluno, Meta with pagination
+service Aluno, Meta with serviceClass
+dto Aluno, Meta with mapstruct
+
+application {
+  config {
+    baseName metasEnem,
+    applicationType monolith,
+    packageName com.metas.enem,
+    authenticationType jwt,
+    prodDatabaseType postgresql,
+    devDatabaseType postgresql,
+    buildTool maven,
+    clientFramework angular
+  }
+  entities Aluno, Meta
+}

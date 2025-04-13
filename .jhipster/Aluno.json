@@ -1,0 +1,19 @@
+{
+  "annotations": {
+    "changelogDate": "20250413134354"
+  },
+  "applications": ["metasEnem"],
+  "dto": "mapstruct",
+  "fields": [
+    {
+      "fieldName": "nome",
+      "fieldType": "String",
+      "fieldValidateRules": ["required"]
+    }
+  ],
+  "name": "Aluno",
+  "pagination": "pagination",
+  "relationships": [],
+  "searchEngine": "no",
+  "service": "serviceClass"
+}
