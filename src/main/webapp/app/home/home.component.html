@@ -4,16 +4,16 @@
   </div>
 
   <div class="col-md-9">
-    <h1 class="display-4"><span jhiTranslate="home.title">Welcome, Java Hipster!</span> (Metas Enem)</h1>
+    <h1 class="display-4"><span jhiTranslate="home.title">🎯 Metas ENEM</span></h1>
 
-    <p class="lead" jhiTranslate="home.subtitle">This is your homepage</p>
+    <p class="lead" jhiTranslate="home.subtitle">Bem-vindo à plataforma de metas dos alunos</p>
 
     <div>
       @if (account() !== null) {
         <div class="alert alert-success">
           @if (account(); as accountRef) {
             <span id="home-logged-message" jhiTranslate="home.logged.message" [translateValues]="{ username: accountRef.login }"
-              >You are logged in as user &quot;{{ accountRef.login }}&quot;.</span
+              >Você está logado como &quot;{{ accountRef.login }}&quot;.</span
             >
           }
         </div>
@@ -34,49 +34,33 @@
       }
     </div>
 
-    <p jhiTranslate="home.question">If you have any question on JHipster:</p>
+    <div class="caard mt-4 p-3 shadow-sm">
+      <h5>Total de alunos cadastrados:</h5>
+      <h3 class="text-primary">{{ totalAlunos }}</h3>
+    </div>
+
+    <p jhiTranslate="home.question">Se precisar de suporte, acesse:</p>
 
     <ul>
       <li>
-        <a href="https://www.jhipster.tech/" target="_blank" rel="noopener noreferrer" jhiTranslate="home.link.homepage"
-          >JHipster homepage</a
+        <a href="https://gamaensino.com" target="_blank" rel="noopener noreferrer" jhiTranslate="home.link.homepage">Gama Ensino</a>
+      </li>
+      <li>
+        <a href="https://gamaprevest.com/" target="_blank" rel="noopener noreferrer" jhiTranslate="home.link.stackoverflow"
+          >Gama Pré-Vestibular</a
         >
       </li>
       <li>
         <a
-          href="https://stackoverflow.com/tags/jhipster/info"
-          target="_blank"
-          rel="noopener noreferrer"
-          jhiTranslate="home.link.stackoverflow"
-          >JHipster on Stack Overflow</a
-        >
-      </li>
-      <li>
-        <a
-          href="https://github.com/jhipster/generator-jhipster/issues?state=open"
+          href="https://github.com/LuizHelio-Fim/Case-Estagio"
           target="_blank"
           rel="noopener noreferrer"
           jhiTranslate="home.link.bugtracker"
-          >JHipster bug tracker</a
-        >
-      </li>
-      <li>
-        <a href="https://gitter.im/jhipster/generator-jhipster" target="_blank" rel="noopener noreferrer" jhiTranslate="home.link.chat"
-          >JHipster public chat room</a
-        >
-      </li>
-      <li>
-        <a href="https://twitter.com/jhipster" target="_blank" rel="noopener noreferrer" jhiTranslate="home.link.follow"
-          >follow &#64;jhipster on Twitter</a
+          >Repositório MetasEnem</a
         >
       </li>
     </ul>
-
-    <p>
-      <span jhiTranslate="home.like">If you like JHipster, don&apos;t forget to give us a star on</span>
-      <a href="https://github.com/jhipster/generator-jhipster" target="_blank" rel="noopener noreferrer" jhiTranslate="home.github"
-        >GitHub</a
-      >!
-    </p>
   </div>
 </div>
+
+<footer class="text-center mt-5 py-3 border-top text-muted">Case - Estágio</footer>
